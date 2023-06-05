@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:wght@400;600&display=swap');
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: #f3f7fa;
+  padding: 50px 100px;
+
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #4a4a4a;
+
+  @media screen and (max-width: 900px) {
+    padding: 20px;
+  }
+}
+
+.page_logo {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: 760px) {
+    display: block;
+  }
+}
+
+.content {
+  width: 70%;
+
+  @media screen and (max-width: 760px) {
+    width: 100%;
+  }
+}
+
+.more__btn {
+  background: #2196f3;
+  border-radius: 5px;
+  color: #ffffff;
+  width: 100%;
+  margin-top: 20px;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: #186aad;
+  }
+}

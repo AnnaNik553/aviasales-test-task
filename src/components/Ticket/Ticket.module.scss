@@ -1,0 +1,75 @@
+.ticket {
+  margin-top: 20px;
+  background: #ffffff;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 20px;
+  cursor: pointer;
+
+  @media screen and (max-width: 440px) {
+    padding: 10px;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  &__price {
+    font-size: 24px;
+    line-height: 24px;
+    color: #2196f3;
+
+    &:after {
+      content: 'Р';
+      padding-left: 5px;
+    }
+  }
+
+  &__img {
+    width: 99px;
+    height: 36px;
+  }
+
+  &__info {
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-column-gap: 20px;
+
+    @media screen and (max-width: 440px) {
+      grid-template-columns: 35% 25% 40%;
+      grid-column-gap: 5px;
+    }
+  }
+
+  &__title {
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #a0b0b9;
+
+    @media screen and (max-width: 440px) {
+      font-size: 10px;
+    }
+  }
+
+  &__subtitle {
+    font-size: 14px;
+    line-height: 21px;
+    color: #4a4a4a;
+
+    @media screen and (max-width: 440px) {
+      font-size: 12px;
+    }
+  }
+}
