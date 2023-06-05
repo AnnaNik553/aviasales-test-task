@@ -1,5 +1,7 @@
 import { connect } from 'react-redux'
+
 import * as actions from '../../actions'
+
 import classes from './SortingList.module.scss'
 
 const SortingList = ({ sortButtonsData, sortingBy, sorting }) => {

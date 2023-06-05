@@ -46,6 +46,7 @@
     "no-nested-ternary": 0,
     "default-param-last": 0,
     "dot-notation": 0,
+    "jsx-a11y/no-noninteractive-tabindex": 0,
     "import/no-unresolved": [2, { "caseSensitive": false }],
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "import/order": [

@@ -1,7 +1,9 @@
 import { connect } from 'react-redux'
-import classes from './Filters.module.scss'
+
 import * as actions from '../../actions'
 import Filter from '../Filter'
+
+import classes from './Filters.module.scss'
 
 const Filters = ({ filtersData, addAllCheckboxes, delAllCheckboxes, delCheckbox, addCheckbox }) => {
   const onChange = ({ target }) => {

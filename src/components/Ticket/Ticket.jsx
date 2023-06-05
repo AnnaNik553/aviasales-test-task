@@ -1,5 +1,6 @@
-import classes from './Ticket.module.scss'
 import { getNumberTransfers, getTakeoffAndLandingTimes, getInFlightTime } from '../../utils'
+
+import classes from './Ticket.module.scss'
 
 const Ticket = ({ price, carrier, segments }) => {
   return (

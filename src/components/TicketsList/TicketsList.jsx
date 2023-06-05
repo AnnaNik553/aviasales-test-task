@@ -4,6 +4,7 @@ import { connect } from 'react-redux'
 import Ticket from '../Ticket'
 import * as actions from '../../actions'
 import { sortTickets, filterTickets } from '../../utils'
+
 import classes from './TicketsList.module.scss'
 
 const TicketsList = ({ ticketsOnPage, tickets, sortingBy, filtersData, children }) => {
@@ -14,14 +15,15 @@ const TicketsList = ({ ticketsOnPage, tickets, sortingBy, filtersData, children 
     }
     const sortedTickets = sortTickets(filteredTickets, sortingBy)
     return (
-      <React.Fragment>
+      <>
         {sortedTickets.slice(0, ticketsOnPage).map((t) => (
           <Ticket key={t.id} {...t} />
         ))}
         {children}
-      </React.Fragment>
+      </>
     )
   }
+  return <div />
 }
 
 const mapStateToProps = (state) => {
