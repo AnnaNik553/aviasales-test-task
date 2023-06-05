@@ -1,8 +1,10 @@
 import React from 'react'
 import { connect } from 'react-redux'
+
 import Ticket from '../Ticket'
 import * as actions from '../../actions'
 import { sortTickets, filterTickets } from '../../utils'
+
 import classes from './TicketsList.module.scss'
 
 const TicketsList = ({ ticketsOnPage, tickets, sortingBy, filtersData, children }) => {
