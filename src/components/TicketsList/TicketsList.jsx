@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 
 import Ticket from '../Ticket'
@@ -36,3 +37,10 @@ const mapStateToProps = (state) => {
 }
 
 export default connect(mapStateToProps, actions)(TicketsList)
+
+TicketsList.propTypes = {
+  ticketsOnPage: PropTypes.number.isRequired,
+  tickets: PropTypes.arrayOf(PropTypes.object).isRequired,
+  sortingBy: PropTypes.string.isRequired,
+  filtersData: PropTypes.arrayOf(PropTypes.object).isRequired,
+}

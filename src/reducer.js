@@ -14,7 +14,7 @@ const defaultState = {
     { inputId: '2', label: '2 пересадки', checked: true },
     { inputId: '3', label: '3 пересадки', checked: true },
   ],
-  searchId: null,
+  searchId: '',
   tickets: [],
   ticketsOnPage: NUMBER_TICKETS_ON_PAGE,
   isLoading: false,

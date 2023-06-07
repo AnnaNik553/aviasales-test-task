@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import PropTypes from 'prop-types'
 import { useDispatch, connect } from 'react-redux'
 
 import Filters from '../Filters'
@@ -52,3 +53,11 @@ const mapStateToProps = (state) => {
 }
 
 export default connect(mapStateToProps, actions)(App)
+
+App.propTypes = {
+  fetchSearchId: PropTypes.func.isRequired,
+  searchId: PropTypes.string.isRequired,
+  fetchTickets: PropTypes.func.isRequired,
+  isLoading: PropTypes.bool.isRequired,
+  hasError: PropTypes.bool.isRequired,
+}

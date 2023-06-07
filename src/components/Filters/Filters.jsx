@@ -1,4 +1,5 @@
 import { connect } from 'react-redux'
+import PropTypes from 'prop-types'
 
 import * as actions from '../../actions'
 import Filter from '../Filter'
@@ -46,3 +47,11 @@ const mapStateToProps = (state) => {
 }
 
 export default connect(mapStateToProps, actions)(Filters)
+
+Filters.propTypes = {
+  filtersData: PropTypes.arrayOf(PropTypes.object).isRequired,
+  addAllCheckboxes: PropTypes.func.isRequired,
+  delAllCheckboxes: PropTypes.func.isRequired,
+  delCheckbox: PropTypes.func.isRequired,
+  addCheckbox: PropTypes.func.isRequired,
+}

@@ -1,4 +1,5 @@
 import { connect } from 'react-redux'
+import PropTypes from 'prop-types'
 
 import * as actions from '../../actions'
 
@@ -28,3 +29,9 @@ const mapStateToProps = (state) => {
 }
 
 export default connect(mapStateToProps, actions)(SortingList)
+
+SortingList.propTypes = {
+  sortButtonsData: PropTypes.arrayOf(PropTypes.array).isRequired,
+  sortingBy: PropTypes.string.isRequired,
+  sorting: PropTypes.func.isRequired,
+}
